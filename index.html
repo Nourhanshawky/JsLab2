@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JsLab2</title>
+</head>
+<body>
+    
+
+    <script>
+        ////EX1/////
+    //     while(true){
+    //    var age =prompt("Please Enter your age ");
+     
+    //    if(age == null)
+    // { 
+    //     console.log("when cancled while loop is breaked");
+    //     break;
+    // }
+    // age =Number(age);
+    //     if(age >= 0){
+    //         //alert("You entered a positive number");
+    //     }
+    //     else{
+    //         alert("Please enter a positive number");
+    //         age =Number(prompt("Please Enter your age "));
+    //     }
+    
+       
+       
+    //     if(age<=10 && age>=1){
+    //         alert("child");
+    //     }
+    //     else if(age>=11 && age<19){
+    //         alert("Teenager");
+    //     }
+    //     else if(age>=19 && age <51){
+    //         alert("Grown Up");
+    //     }
+    //     else{
+    //         alert("Old");
+    //     }     
+    // }
+    ///////////////END EX1////////////////////
+
+    //////////////////EX2///////////////////
+    var count=0;
+    var str=prompt("Please Enter a String");
+    for(i=0 ; i<str.length ;i++){
+        if(str[i]=="a" || str[i]=="e" || str[i]=="o" || str[i]=="u" || str[i]=="i"){
+            count++;           
+        }
+        
+    }
+
+    alert("number of vowels in string "+count);
+   
+   ////////////////////////END OF EX2/////////////////////////
+
+   //////////////////////EX3////////////////////
+
+   
+while(true){
+
+    hours = prompt("Please enter hour in 24 hour format"); 
+    if(hours == null) break;
+   if(hours >=12){
+    AmOrPm='pm';
+   }
+   else{
+    AmOrPm='am';
+   }
+   if (hours % 12 !== 0) {
+  hours = hours % 12;
+} else {
+  hours = 12;
+}
+   
+    var finalTime = "Time in 12 hour clock - " + hours +" " + AmOrPm; 
+    alert(finalTime);
+
+}
+    </script>
+</body>
+</html>
